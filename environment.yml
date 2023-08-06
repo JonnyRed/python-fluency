@@ -1,0 +1,12 @@
+name: Fluent-Python
+channels:
+  - conda-forge
+  - bokeh
+  - defaults
+dependencies:
+  - python=3.10
+  - ipython
+  - ipykernel
+  - pytest
+  - nbval
+prefix: D:\Users\John\miniconda3\envs\Fluent-Python

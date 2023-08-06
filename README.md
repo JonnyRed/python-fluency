@@ -1,15 +1,18 @@
 # Fluent Python 2e example code
 
-Example code for the book **Fluent Python, Second Edition** by Luciano Ramalho (O'Reilly, 2022).
+Example code for the book **Fluent Python, Second Edition** by
+Luciano Ramalho (O'Reilly, 2022).
 
 
 ## Table of Contents
 
-All chapters are undergoing review and updates, including significant rewrites in the chapters about concurrency in **Part V**.
+All chapters are undergoing review and updates, including significant
+rewrites in the chapters about concurrency in **Part V**.
 
 New chapters in **Fluent Python 2e** are marked with 🆕.
 
-> 🚨 &nbsp;This table of contents is subject to change at any time until the book goes to the printer.<BR>
+> 🚨 &nbsp;This table of contents is subject to change at any time
+until the book goes to the printer.<BR>
 Latest change: Old **Part I—Prologue** merged into new **Part I—Data Structures**; parts renumbered accordingly; chapter numbers unchanged.
 
 Part / Chapter #|Title|Directory|1<sup>st</sup> ed. Chapter&nbsp;#

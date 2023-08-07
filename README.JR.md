@@ -6,11 +6,33 @@ interpretor is throught the command pallette and
 * This will be the initial commit. Notice its called master and not
 main
 
+# Doctest
+
 To test the code in this README run the following python script
 
 ```bash
 python -m doctest README.JR.md  -v
 ```
+
+Ellipsis in doctests
+
+Whenever possible, I extracted the Python console listings in this book
+from doctest to ensure accuracy. When the output was too long, the
+elided part is marked by an ellipsis (...)
+
+doctest: +ELLIPSIS directive to make the doctest pass:
+
+>
+\>>> for card in reversed(deck):     # doctest: +ELLIPSIS
+...   print(card)
+Card(rank='A', suit='hearts')
+Card(rank='K', suit='hearts')
+Card(rank='Q', suit='hearts')
+...
+
+>
+
+
 # namedtuple
 
 [Named tuples][] are a useful way to structure data in Python. They are

@@ -6,6 +6,11 @@ interpretor is throught the command pallette and
 * This will be the initial commit. Notice its called master and not
 main
 
+To test the code in this README run the following python script
+
+```bash
+python -m doctest README.JR.md  -v
+```
 # namedtuple
 
 [Named tuples][] are a useful way to structure data in Python. They are
@@ -33,6 +38,35 @@ references for named tuples:
 - [Write Pythonic and Clean Code With namedtuple – Real Python][1]
 - [How to Use Python Named Tuples • datagy](^2^)
 - [Tuple types - C# reference | Microsoft Learn](^4^)
+
+## point example
+
+```python
+>>> from collections import namedtuple
+
+>>> # Create a namedtuple type, Point
+>>> Point = namedtuple("Point", "x y")
+>>> issubclass(Point, tuple)
+True
+
+>>> # Instantiate the new type
+>>> point = Point(2, 4)
+>>> point
+Point(x=2, y=4)
+
+>>> # Dot notation to access coordinates
+>>> point.x
+2
+>>> point.y
+4
+
+>>> # Indexing to access coordinates
+>>> point[0]
+2
+>>> point[1]
+4
+
+```
 
 [1]:https://realpython.com/python-namedtuple/
 

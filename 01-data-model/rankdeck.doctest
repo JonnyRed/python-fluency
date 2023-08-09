@@ -1,12 +1,24 @@
->>> from frenchdeck import FrenchDeck
->>> from rankdeck import spades_high
+>>> from frenchdeck import FrenchDeck, Card
+>>> from rankdeck import suit_values, spades_high
 
 
 >>> deck = FrenchDeck()
 >>> len(deck)
 52
 
+Test suit values
+>>> suit_values
+{'spades': 3, 'hearts': 2, 'diamonds': 1, 'clubs': 0}
 
+Test spades_high
+>>> spades_high(Card(rank='2', suit='clubs'))
+0
+
+>>> spades_high(Card(rank='A', suit='spades'))
+51
+
+
+Test sort deck according to spades_high
 >>> for card in sorted(deck, key=spades_high):  # doctest: +ELLIPSIS
 ...      print(card)
 Card(rank='2', suit='clubs')

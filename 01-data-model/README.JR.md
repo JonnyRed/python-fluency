@@ -131,3 +131,29 @@ Point(x=2, y=4)
     15.0
 
 ```
+
+ `__repr__` and `__str__` special methods in Python for creating string
+  representations of objects. Here's a summary of the key points:
+
+- The `__repr__` special method is used to define how an object should
+be represented as a string when using the `repr()` built-in function.
+Without a custom `__repr__` method, the default representation would
+show the object's memory address.
+- In interactive consoles, debuggers, and when using `%r` formatting
+or `!r` in f-strings, the `__repr__` method is called to display the
+object's representation.
+- The `__repr__` method should generate a string that is clear and
+unambiguous, potentially resembling the constructor call needed to
+recreate the object. It's a good practice to use the `!r` conversion
+field in f-strings to ensure consistent representation.
+- On the other hand, the `__str__` method is used to create a string
+suitable for display to end users, typically called by the `str()`
+built-in function and the `print()` function.
+- If `__str__` is not explicitly defined, Python may use `__repr__`
+as a fallback for user-friendly string display.
+- The example given demonstrates using both `__repr__` and `__str__`
+for creating string representations of a `Vector` class instance.
+The `__repr__` method aims to resemble the class constructor,
+while `__str__` focuses on user-friendly display.
+
+In summary, `__repr__` is used for a technical and unambiguous representation, while `__str__` is used for a more human-readable display of an object.

@@ -1,5 +1,5 @@
 2023/08/06
-* First installation of Fluent Python. Not straightfoward as
+* First installation of Fluent Python. Not straightforward as
 it was my first go at using doctest on a file. Best way to select
 interpretor is throught the command pallette and
 ```Python:Select Kernal```
@@ -98,3 +98,36 @@ Point(x=2, y=4)
 
 
 [Named tuples]:https://docs.python.org/3.10/library/collections.html?highlight=collections#namedtuple-factory-function-for-tuples-with-named-fields
+
+# Emulating Numeric Types
+
+```python
+# vector2d.py: a simplistic class demonstrating some special methods
+# It is simplistic for didactic reasons. It lacks proper error handling,
+# especially in the ``__add__`` and ``__mul__`` methods.
+
+# This example is greatly expanded later in the book.
+
+>>> from vector2d import Vector
+
+# Addition::
+
+    >>> v1 = Vector(2, 4)
+    >>> v2 = Vector(2, 1)
+    >>> v1 + v2
+    Vector(4, 5)
+
+# Absolute value::
+
+    >>> v = Vector(3, 4)
+    >>> abs(v)
+    5.0
+
+# Scalar multiplication::
+
+    >>> v * 3
+    Vector(9, 12)
+    >>> abs(v * 3)
+    15.0
+
+```
